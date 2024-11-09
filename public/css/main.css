@@ -1,0 +1,164 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+
+
+.navbar {
+    width: 100%;
+    background-color: rgb(58, 109, 148);
+    padding: 10px 20px; 
+    height: 11vh;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 9999; 
+}
+
+
+main {
+    margin-top: 80px;
+}
+
+.navbar .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.navbar .navbar-brand img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Qidiruv boxi */
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15%;
+}
+
+.search-box input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 500px;
+}
+
+.search-box button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
+.search-box button i {
+    color: #37c0c0;
+}
+
+/* Profil dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdown .btn {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+}
+
+/* Profil rasmi uchun o'lcham va orqa fon */
+.profile-info img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 10%;
+    background-color: transparent; /* Orqa fonni olib tashlash */
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+    position: absolute;
+    right: 0;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+
+.dropdown-menu .dropdown-item {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #f8f8f8;
+}
+
+
+main {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .search-box input {
+        width: 150px;
+    }
+    .navbar .container-fluid {
+        flex-direction: column;
+    }
+    .search-box {
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+.station-item {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-bottom: 25px;
+
+}
+
+.station-item:hover {
+    opacity: 0.7;
+}
+
+.station-item i {
+    display: block;
+    margin-right: 10px;
+    border-radius: 6px;
+    color: #ff1919;
+    font-size: 25px;
+    font: optional;
+}
+

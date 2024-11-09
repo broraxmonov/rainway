@@ -1,0 +1,17 @@
+header{
+    
+}
+footer{
+    width: 20%;
+    height: 85vh;
+    background-color: rgb(58, 109, 148);
+}
+.basic_div{
+    width: 80%;
+    height: 85vh;
+    background-color: rgb(255, 252, 250);
+    float: right;
+}
+
+.row{
+}
